@@ -1,4 +1,6 @@
 const locators = require('../fixtures/locators.json')
+const faker = require('faker')
+
 
 describe('positive login case', () => {
     it('visit gallery app', () => {
@@ -41,8 +43,8 @@ describe('positive login case', () => {
     })
   
     it('bad credentials login', () => {
-      cy.get("input[id='email']").type('jovan.jovanov@gmail.com')
-      cy.get("input[id='password']").type('mikazika123.')
+      cy.get("input[id='email']").type(faker.internet.email())
+      cy.get("input[id='password']").type(faker.internet.password())
       cy.get("button[type='submit']").click() 
     })
   
