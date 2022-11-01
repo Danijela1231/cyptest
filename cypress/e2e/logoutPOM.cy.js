@@ -9,6 +9,9 @@ describe('logout case', () => {
         navigation.clickSubmitButton()
         cy.wait(5000)
         navigation.loginButton.should('not.exist')
+    })
+    it('logout', () => {
+        cy.wait(5000)
         navigation.clickLogoutButton()
         navigation.logoutButton.should('not.exist')
     })

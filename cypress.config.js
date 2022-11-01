@@ -6,6 +6,10 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'https://gallery-app.vivifyideas.com/',
-    watchForFileChanges: false
+    watchForFileChanges: false,
+    env: {
+      validLoginEmail : "jovan.jovanovic@gmail.com",
+      validLoginPassword : "jovan.jovanovic1"
+    }
   },
 });
