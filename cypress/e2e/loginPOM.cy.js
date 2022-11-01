@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import { not } from 'check-more-types'
+
 import { loginPage } from '../page_objects/login.js'
 import { navigation } from '../page_objects/navigation.js'
 const faker = require('faker')
